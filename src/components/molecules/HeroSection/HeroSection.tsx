@@ -29,7 +29,7 @@ export const HeroSection = () => {
 			<div className="mx-auto max-w-7xl px-6 lg:px-8 lg:py-32">
 				<div className="mx-auto max-w-2xl lg:mx-0 lg:grid lg:max-w-none lg:grid-cols-2 lg:gap-x-16 lg:gap-y-6 xl:grid-cols-1 xl:grid-rows-1 xl:gap-x-8">
 					<h1 className="headline max-w-2xl text-4xl font-bold tracking-tight sm:text-6xl lg:col-span-2 xl:col-auto">
-						Hey, I&apos;m Jacob Herper
+						Hey, I&apos;m Zeb Wu
 					</h1>
 					<div className="mt-6 max-w-xl lg:mt-0 xl:col-end-1 xl:row-start-1">
 						<p className="text-lg leading-8 text-slate-600 dark:text-off-white">
@@ -71,7 +71,7 @@ export const HeroSection = () => {
 					</div>
 					<Image
 						src="/assets/jacob.jpg"
-						alt="Photo of Jacob Herper"
+						alt="Photo of Zeb Wu"
 						height={300}
 						width={450}
 						loading="eager"

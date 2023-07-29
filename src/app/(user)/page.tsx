@@ -20,17 +20,16 @@ import type { Service as ServiceType } from '@types';
 
 const getData = async () => {
 	const services: ServiceType[] = await sanityClient.fetch(servicesQuery);
-
 	return { services };
 };
 
 export const metadata = {
-	title: 'Software Engineer and Consultant Jacob Herper',
+	title: 'Software Engineer and Consultant Zeb Wu',
 	description:
 		'A Front-End Software Engineer with a focus on JavaScript and React. I have more than 10 years experience working in software engineering and consulting.',
 	keywords: [
 		'Software Engineer',
-		'Jacob Herper',
+		'Zeb Wu',
 		'Software Consulting',
 		'Front-End',
 		'Full-Stack',
@@ -45,6 +44,7 @@ export const metadata = {
 
 const HomePage = async () => {
 	const { services } = await getData();
+	debugger;
 
 	return (
 		<AnimatePage>
