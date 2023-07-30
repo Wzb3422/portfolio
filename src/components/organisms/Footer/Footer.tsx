@@ -16,24 +16,24 @@ const Footer = () => {
 					profiles={[
 						{
 							name: 'Github',
-							url: 'https://www.github.com/jakeherp',
+							url: 'https://www.github.com/wzb3422',
 							icon: <IconGithub />,
 						},
 						{
 							name: 'LinkedIn',
-							url: 'https://www.linkedin.com/in/jacobherper',
+							url: 'https://www.linkedin.com/in/zebwu',
 							icon: <IconLinkedin />,
 						},
-						{
-							name: 'Twitter',
-							url: 'https://twitter.com/jakeherp',
-							icon: <IconTwitter />,
-						},
-						{
-							name: 'Instagram',
-							url: 'https://www.instagram.com/jakeherp',
-							icon: <IconInstagram />,
-						},
+						// {
+						// 	name: 'Twitter',
+						// 	url: 'https://twitter.com/jakeherp',
+						// 	icon: <IconTwitter />,
+						// },
+						// {
+						// 	name: 'Instagram',
+						// 	url: 'https://www.instagram.com/jakeherp',
+						// 	icon: <IconInstagram />,
+						// },
 					]}
 				/>
 			</Container>
