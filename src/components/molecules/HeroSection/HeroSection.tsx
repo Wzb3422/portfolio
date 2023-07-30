@@ -69,14 +69,14 @@ export const HeroSection = () => {
 							</Link>
 						</div>
 					</div>
-					<Image
+					{/* <Image
 						src="/assets/jacob.jpg"
 						alt="Photo of Zeb Wu"
 						height={300}
 						width={450}
 						loading="eager"
 						className="mt-10 aspect-[6/5] max-w-full rounded-2xl object-cover sm:mt-16 lg:ml-20 lg:mt-0 lg:max-w-none xl:row-span-2 xl:row-end-2 xl:mt-36"
-					/>
+					/> */}
 				</div>
 			</div>
 			<div className="absolute inset-x-0 bottom-0 -z-10 h-24 bg-gradient-to-t from-off-white dark:from-slate-950 sm:h-32" />
