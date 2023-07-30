@@ -25,17 +25,21 @@ const Logo = ({ hideName }: LogoProps) => {
 					quality={100}
 					alt="Vectorised image of Zeb Wu"
 					className="h-12 w-12"
-				/> */}
-				{/* {!hideName && (
+				/>
+				{!hideName && (
 					<>
 						<span className="opacity-100 transition duration-300 group-hover:opacity-0">
 							@zebwu
+						</span>
+						<span className="absolute left-16 from-blue-400 to-blue-700 opacity-0 transition duration-300 group-hover:bg-gradient-to-r group-hover:bg-clip-text group-hover:text-transparent group-hover:opacity-100">
+							Zeb Wu
 						</span>
 					</>
 				)} */}
 				<span className="absolute left-16 from-blue-400 to-blue-700  transition duration-300 bg-gradient-to-r bg-clip-text text-transparent">
 					Zeb Wu
 				</span>
+
 			</motion.div>
 		</Link>
 	);
