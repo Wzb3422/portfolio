@@ -10,13 +10,14 @@ export const HeroSection = () => {
 		'TypeScript',
 		'GraphQL',
 		'Redux',
-		'Jamstack',
 		'Next.js',
 		'RESTful APIs',
 		'HTML',
 		'CSS',
-		'Gatsby',
-		'Svelte',
+		'Vue',
+		'Nest.js',
+		'Node.js',
+		'AWS',
 	];
 
 	return (
@@ -41,19 +42,6 @@ export const HeroSection = () => {
 							<br />
 							You can talk to me about <TypeWriter strings={talkAbout} />.
 						</p>
-						<p className="text-lg leading-8 text-slate-600 dark:text-off-white">
-							P.S. this website is open-source and available on{' '}
-							<a
-								href="https://github.com/jakeherp/portfolio"
-								title="Link to Github repository"
-								target="_blank"
-								rel="noopener noreferrer"
-								className="underlined relative border-b-2 border-grey-300 font-bold hover:border-b-0 dark:border-grey-700"
-							>
-								Github
-							</a>
-							.
-						</p>
 						<div className="mt-10 flex items-center gap-x-6">
 							<Link
 								href="/contact"
@@ -69,14 +57,14 @@ export const HeroSection = () => {
 							</Link>
 						</div>
 					</div>
-					{/* <Image
+					<Image
 						src="/assets/jacob.jpg"
 						alt="Photo of Zeb Wu"
 						height={300}
 						width={450}
 						loading="eager"
-						className="mt-10 aspect-[6/5] max-w-full rounded-2xl object-cover sm:mt-16 lg:ml-20 lg:mt-0 lg:max-w-none xl:row-span-2 xl:row-end-2 xl:mt-36"
-					/> */}
+						className="mt-10 aspect-[6/5] max-w-full rounded-2xl object-cover sm:mt-16 lg:ml-20 lg:mt-0 lg:max-w-none xl:row-span-2 xl:row-end-2 xl:mt-36 invisible"
+					/>
 				</div>
 			</div>
 			<div className="absolute inset-x-0 bottom-0 -z-10 h-24 bg-gradient-to-t from-off-white dark:from-slate-950 sm:h-32" />

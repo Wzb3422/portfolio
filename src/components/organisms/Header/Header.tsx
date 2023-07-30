@@ -13,6 +13,8 @@ import { usePathname } from 'next/navigation';
 import { useEffect, useState } from 'react';
 import Headroom from 'react-headroom';
 
+
+// TODO: all tabs are under construction 🏗
 export const navItems = [
 	{
 		href: '/about',

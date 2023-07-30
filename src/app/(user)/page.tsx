@@ -6,6 +6,9 @@ import { HeroSection } from '@components/molecules/HeroSection/HeroSection';
 import { sanityClient } from '@lib/sanity';
 
 import { servicesQuery } from '@queries/services';
+import { jobsQuery } from '@queries/jobs';
+
+import { WorkExperience } from '@components/organisms/WorkExperience';
 
 import LogoCypress from '@root/public/assets/tools/cypress.svg';
 import LogoFigma from '@root/public/assets/tools/figma.svg';
@@ -16,11 +19,12 @@ import LogoSanity from '@root/public/assets/tools/sanity.svg';
 import LogoStorybook from '@root/public/assets/tools/storybook.svg';
 import LogoSvelte from '@root/public/assets/tools/svelte.svg';
 import LogoVercel from '@root/public/assets/tools/vercel.svg';
-import type { Service as ServiceType } from '@types';
+import type { Service as ServiceType, Job } from '@types';
 
 const getData = async () => {
 	const services: ServiceType[] = await sanityClient.fetch(servicesQuery);
-	return { services };
+	const jobs: Job[] = await sanityClient.fetch(jobsQuery);
+	return { services, jobs };
 };
 
 export const metadata = {
@@ -43,12 +47,21 @@ export const metadata = {
 };
 
 const HomePage = async () => {
-	const { services } = await getData();
+	const { services, jobs } = await getData();
 	debugger;
 
 	return (
 		<AnimatePage>
 			<HeroSection />
+
+			<section id="experience">
+				<Container>
+					<h2 className="headline mb-4 mt-12 text-4xl">Experience</h2>
+					<WorkExperience jobs={jobs} />
+				</Container>
+			</section>
+
+
 			<section id="tools" className="my-40">
 				<Container>
 					<h2 className="headline mt-24 text-center text-xl md:text-2xl lg:text-3xl">
