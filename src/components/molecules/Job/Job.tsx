@@ -50,7 +50,7 @@ const Job: FC<PropsWithChildren<JobProps>> = ({
 
 					<p className="mb-4 text-center text-sm text-slate-500">
 						{`${format(new Date(fromDate), 'MMM yyyy')} — ${
-							toDate ? format(new Date(toDate), 'MMM yyyy') : 'present'
+							toDate ? format(new Date(toDate), 'MMM yyyy') : 'Present'
 						}`}
 					</p>
 

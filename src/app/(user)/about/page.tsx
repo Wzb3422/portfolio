@@ -50,7 +50,9 @@ const AboutPage = async () => {
 				</p>
 
 				<h2 className="headline mb-4 mt-12 text-4xl">Work Experience</h2>
-
+				<p className="mb-6">
+					I have had the privilege of working at some of the world's top companies, both in the past and currently.
+				</p>
 				<WorkExperience jobs={jobs} />
 
 				<h2 className="headline mb-4 mt-12 text-4xl">Education</h2>

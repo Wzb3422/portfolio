@@ -34,7 +34,7 @@ export const HeroSection = () => {
 			/>
 			<div className="mx-auto max-w-7xl px-6 lg:px-8">
 				<div className="mx-auto flex flex-col">
-					<h1 className="headline max-w-2xl text-4xl font-bold tracking-tight sm:text-6xl">
+					<h1 className="headline max-w-2xl text-4xl font-bold tracking-tight sm:text-6xl sm:leading-tight">
 						Hey, I&apos;m Zeb Wu
 					</h1>
 					<div className="mt-16 max-w-xl lg:mt-4">
@@ -44,7 +44,7 @@ export const HeroSection = () => {
 							performance and user experience, I create amazing web applications to make the Internet a better place.
 						</p>
 						<p className="flex flex-wrap items-center text-lg mt-4 leading-8 text-slate-600 dark:text-off-white">
-							Currently a Software Engineer at WeChat
+							Currently a Software Engineer at
 							<Link href="https://www.wechat.com" target="_blank">
 								<Image
 									src="/assets/companies/wechat.svg"
@@ -52,7 +52,7 @@ export const HeroSection = () => {
 									height={32}
 									quality={100}
 									alt="WeChat Logo"
-									className="ml-2 transform transition-all md:hover:scale-[1.2]"
+									className="ml-2 transform transition-all relative z-20 md:hover:scale-[1.2]"
 								/>
 							</Link>
 						</p>

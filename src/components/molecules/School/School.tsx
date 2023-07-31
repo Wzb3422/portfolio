@@ -26,9 +26,9 @@ const School = ({ institution, course, startDate, endDate, courseContents }: Sch
 					/>
 				)}
 				<div className="mb-2 w-full">
-					<div className="flex justify-between">
+					<div className="flex flex-col md:flex-row justify-between">
 						<h3 className="font-bold">{course}</h3>
-						<div className="flex justify-between">
+						<div className="flex justify-between w-40">
 							<span>{format(new Date(startDate), 'MMM yyyy')}</span>
 							<span className="mx-1">-</span>
 							<span>{format(new Date(endDate), 'MMM yyyy')}</span>
