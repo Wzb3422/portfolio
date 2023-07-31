@@ -1,5 +1,10 @@
 import { TypeWriter } from '@components/atoms/TypeWriter';
 
+import LogoTiktok from '@root/public/assets/companies/tiktok.svg';
+import LogoAlibaba from '@root/public/assets/companies/alibaba.svg';
+import LogoWechat from '@root/public/assets/companies/wechat.svg';
+import LogoYyb from '@root/public/assets/companies/yyb.svg';
+
 import Image from 'next/image';
 import Link from 'next/link';
 
@@ -36,10 +41,56 @@ export const HeroSection = () => {
 						<p className="text-lg leading-8 text-slate-600 dark:text-off-white">
 							I am a passionate Software Engineer, specialised in front-end
 							development using React and TypeScript. As an advocate for web
-							performance and accessibility and an evangelist for the Jamstack,
-							I create amazing web applications to make the internet a better
-							place.
+							performance and user experience, I create amazing web applications to make the Internet a better place.
 							<br />
+						</p>
+						<p className="flex flex-wrap items-center text-lg mt-4 leading-8 text-slate-600 dark:text-off-white">
+							Currently a Software Engineer at
+							<Link href="https://www.wechat.com" target="_blank">
+								<Image
+									src="/assets/companies/wechat-logo-with-name.svg"
+									width={110}
+									height={64}
+									quality={100}
+									alt="WeChat Logo"
+									className="ml-2 h-full"
+								/>
+							</Link>
+						</p>
+						<p className="flex flex-wrap items-center text-lg leading-8 text-slate-600 dark:text-off-white">
+							Previously worked at
+							<Link href="https://www.tiktok.com" target="_blank">
+								<Image
+									src="/assets/companies/tiktok.svg"
+									width={32}
+									height={32}
+									quality={100}
+									alt="TikTok Logo"
+									className="mx-1"
+								/>
+							</Link>
+							<Link href="https://www.alibabagroup.com/" target="_blank">
+								<Image
+									src="/assets/companies/alibaba.svg"
+									width={32}
+									height={32}
+									quality={100}
+									alt="Alibaba Logo"
+									className="mx-1"
+								/>
+							</Link>
+							<Link href="https://sj.qq.com/" target="_blank">
+								<Image
+									src="/assets/companies/yyb.svg"
+									width={32}
+									height={32}
+									quality={100}
+									alt="Yyb Logo"
+									className="mx-1"
+								/>
+							</Link>
+						</p>
+						<p className="text-lg leading-8 text-slate-600 dark:text-off-white">
 							You can talk to me about <TypeWriter strings={talkAbout} />.
 						</p>
 						<div className="mt-10 flex items-center">
