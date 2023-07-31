@@ -40,13 +40,10 @@ const AboutPage = async () => {
 					Hey, I&apos;m Zeb Wu
 				</h1>
 				<h2 className="mt-2 text-xl font-bold md:text-2xl">
-					Software Engineer from the UK
+					Software Engineer
 				</h2>
 				<p className="mt-8">
-					As a passionate front-end developer, I create amazing websites and web
-					apps to make the internet a better place. I am an advocate for web
-					performance and accessibility as well as a JAMstack enthusiast with
-					experience in serverless technologies.
+					As a highly motivated Fullstack Developer with a strong focus on frontend development, I have amassed 2 years of professional experience and a proven track record of success in top global companies such as Tiktok, WeChat, and Alibaba. My in-depth knowledge of modern web technologies and unwavering passion for staying up-to-date with the latest trends in the field make me a valuable asset to any team. I am confident in my abilities to deliver exceptional results and exceed expectations.
 				</p>
 				<p className="my-4">
 					I am &radic;1,024 years old and have been a web developer for as long

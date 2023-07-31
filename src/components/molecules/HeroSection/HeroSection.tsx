@@ -42,7 +42,6 @@ export const HeroSection = () => {
 							I am a passionate Software Engineer, specialised in front-end
 							development using React and TypeScript. As an advocate for web
 							performance and user experience, I create amazing web applications to make the Internet a better place.
-							<br />
 						</p>
 						<p className="flex flex-wrap items-center text-lg mt-4 leading-8 text-slate-600 dark:text-off-white">
 							Currently a Software Engineer at WeChat
@@ -53,7 +52,7 @@ export const HeroSection = () => {
 									height={32}
 									quality={100}
 									alt="WeChat Logo"
-									className="ml-2"
+									className="ml-2 transform transition-all md:hover:scale-[1.2]"
 								/>
 							</Link>
 						</p>
@@ -66,7 +65,7 @@ export const HeroSection = () => {
 									height={32}
 									quality={100}
 									alt="TikTok Logo"
-									className="mx-1"
+									className="mx-1 transform transition-all md:hover:scale-[1.2]"
 								/>
 							</Link>
 							<Link href="https://www.alibabagroup.com/" target="_blank">
@@ -76,7 +75,7 @@ export const HeroSection = () => {
 									height={32}
 									quality={100}
 									alt="Alibaba Logo"
-									className="mx-1"
+									className="mx-1 transform transition-all md:hover:scale-[1.2]"
 								/>
 							</Link>
 							<Link href="https://sj.qq.com/" target="_blank">
@@ -86,7 +85,7 @@ export const HeroSection = () => {
 									height={32}
 									quality={100}
 									alt="Yyb Logo"
-									className="mx-1"
+									className="mx-1 transform transition-all md:hover:scale-[1.2]"
 								/>
 							</Link>
 						</p>

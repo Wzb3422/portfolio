@@ -34,7 +34,7 @@ export const navItems = [
 	// },
 	{
 		href: '/contact',
-		title: 'Contact Me',
+		title: 'Contact',
 	},
 ];
 
