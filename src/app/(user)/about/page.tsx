@@ -2,7 +2,6 @@ import { AnimatePage } from '@components/atoms/AnimatePage';
 import { Button } from '@components/atoms/Button';
 import { Container } from '@components/atoms/Container';
 import { IconDownload } from '@components/atoms/Icons';
-import { PodcastList } from '@components/molecules/PodcastList';
 import { Education } from '@components/organisms/Education';
 import { WorkExperience } from '@components/organisms/WorkExperience';
 
@@ -10,7 +9,6 @@ import { sanityClient } from '@lib/sanity';
 
 import { educationQuery } from '@queries/education';
 import { jobsQuery } from '@queries/jobs';
-import { podcastsQuery } from '@queries/podcasts';
 
 import type { Education as EducationType, Job, Podcast } from '@types';
 import Link from 'next/link';
@@ -23,19 +21,17 @@ export const metadata = {
 };
 
 const getData = async () => {
-	const podcasts: Podcast[] = await sanityClient.fetch(podcastsQuery);
 	const jobs: Job[] = await sanityClient.fetch(jobsQuery);
 	const education: EducationType[] = await sanityClient.fetch(educationQuery);
 
 	return {
 		education,
 		jobs,
-		podcasts,
 	};
 };
 
 const AboutPage = async () => {
-	const { education, jobs, podcasts } = await getData();
+	const { education, jobs } = await getData();
 
 	return (
 		<AnimatePage>
@@ -44,7 +40,7 @@ const AboutPage = async () => {
 					Hey, I&apos;m Zeb Wu
 				</h1>
 				<h2 className="mt-2 text-xl font-bold md:text-2xl">
-					Senior Software Engineer from the UK
+					Software Engineer from the UK
 				</h2>
 				<p className="mt-8">
 					As a passionate front-end developer, I create amazing websites and web
@@ -68,9 +64,6 @@ const AboutPage = async () => {
 					others). Furthermore I enjoy cooking fresh food when I come home after
 					a long day at the office.
 				</p>
-				<h2 className="headline mb-4 mt-12 text-4xl">Podcasts I enjoy</h2>
-
-				<PodcastList podcasts={podcasts} />
 
 				<h2 className="headline mb-4 mt-12 text-4xl">Experience</h2>
 
@@ -84,7 +77,7 @@ const AboutPage = async () => {
 
 				<Education education={education} />
 
-				<section id="cv-download">
+				{/* <section id="cv-download">
 					<h2 className="headline mb-4 mt-12 text-4xl">
 						Interested in what I have to offer?
 					</h2>
@@ -124,7 +117,7 @@ const AboutPage = async () => {
 							Information for recruiters <span aria-hidden="true">→</span>
 						</Link>
 					</div>
-				</section>
+				</section> */}
 			</Container>
 		</AnimatePage>
 	);

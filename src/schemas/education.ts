@@ -22,8 +22,13 @@ export default defineType({
 			],
 		}),
 		defineField({
-			name: 'date',
-			title: 'Date',
+			name: 'startDate',
+			title: 'Start Date',
+			type: 'date',
+		}),
+		defineField({
+			name: 'endDate',
+			title: 'End Date',
 			type: 'date',
 		}),
 		defineField({

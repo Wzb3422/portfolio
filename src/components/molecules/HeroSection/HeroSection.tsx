@@ -45,15 +45,15 @@ export const HeroSection = () => {
 							<br />
 						</p>
 						<p className="flex flex-wrap items-center text-lg mt-4 leading-8 text-slate-600 dark:text-off-white">
-							Currently a Software Engineer at
+							Currently a Software Engineer at WeChat
 							<Link href="https://www.wechat.com" target="_blank">
 								<Image
-									src="/assets/companies/wechat-logo-with-name.svg"
-									width={110}
-									height={64}
+									src="/assets/companies/wechat.svg"
+									width={32}
+									height={32}
 									quality={100}
 									alt="WeChat Logo"
-									className="ml-2 h-full"
+									className="ml-2"
 								/>
 							</Link>
 						</p>

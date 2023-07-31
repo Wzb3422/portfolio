@@ -20,21 +20,21 @@ export const navItems = [
 		href: '/about',
 		title: 'About',
 	},
-	{
-		href: '/uses',
-		title: 'Uses',
-	},
-	{
-		href: '/case-studies',
-		title: 'Case Studies',
-	},
-	{
-		href: '/blog',
-		title: 'Blog',
-	},
+	// {
+	// 	href: '/uses',
+	// 	title: 'Uses',
+	// },
+	// {
+	// 	href: '/case-studies',
+	// 	title: 'Case Studies',
+	// },
+	// {
+	// 	href: '/blog',
+	// 	title: 'Blog',
+	// },
 	{
 		href: '/contact',
-		title: 'Contact',
+		title: 'Contact Me',
 	},
 ];
 

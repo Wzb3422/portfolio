@@ -10,7 +10,7 @@ export interface EducationProps {
 const Education = ({ education }: EducationProps) => {
 	return (
 		<>
-			{education.map(({ course, date, institution, courseContents }) => (
+			{education.map(({ course, startDate, endDate, institution, courseContents }) => (
 				<div
 					className={classNames(
 						'flex transform transition-all md:hover:scale-[1.01]'
@@ -19,7 +19,8 @@ const Education = ({ education }: EducationProps) => {
 				>
 					<School
 						course={course}
-						date={date}
+						startDate={startDate}
+						endDate={endDate}
 						institution={institution}
 						courseContents={courseContents}
 					/>

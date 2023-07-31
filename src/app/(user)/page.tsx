@@ -1,7 +1,6 @@
 import { AnimatePage } from '@components/atoms/AnimatePage';
 import { HeroSection } from '@components/molecules/HeroSection/HeroSection';
 
-
 export const metadata = {
 	title: 'Software Engineer and Consultant Zeb Wu',
 	description:

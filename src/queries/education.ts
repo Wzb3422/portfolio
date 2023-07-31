@@ -4,7 +4,8 @@ export const educationQuery = groq`
 *[_type == "education"] {
   course,
   "courseContents": courseContents[]->.title,
-  date,
+  startDate,
+  endDate,
   "institution": institution-> {
     name,
     url,
