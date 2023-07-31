@@ -10,12 +10,10 @@ import { sanityClient } from '@lib/sanity';
 import { educationQuery } from '@queries/education';
 import { jobsQuery } from '@queries/jobs';
 
-import type { Education as EducationType, Job, Podcast } from '@types';
-import Link from 'next/link';
+import type { Education as EducationType, Job } from '@types';
 
 export const metadata = {
-	title:
-		'About Zeb Wu, a Senior Software Engineer and Consultant in the UK',
+	title: 'About Zeb Wu, a Senior Software Engineer and Consultant in the UK',
 	description:
 		'As a passionate front-end software developer, I create amazing websites and web apps to make the internet a better place.',
 };
@@ -43,21 +41,36 @@ const AboutPage = async () => {
 					Software Engineer
 				</h2>
 				<p className="mt-8">
-					As a highly motivated Fullstack Developer with a strong focus on frontend development, I have 2 years of professional experience and a proven track record of success in top global companies such as Tiktok, WeChat, and Alibaba. My in-depth knowledge of modern web technologies and unwavering passion for staying up-to-date with the latest trends in the field make me a valuable asset to any team. I am confident in my abilities to deliver exceptional results and exceed expectations.
+					As a highly motivated Fullstack Developer with a strong focus on
+					frontend development, I have 2 years of professional experience and a
+					proven track record of success in top global companies such as Tiktok,
+					WeChat, and Alibaba. My in-depth knowledge of modern web technologies
+					and unwavering passion for staying up-to-date with the latest trends
+					in the field make me a valuable asset to any team. I am confident in
+					my abilities to deliver exceptional results and exceed expectations.
 				</p>
 				<p className="my-4">
-					Programming has been my passion since childhood. At the age of 12, I began learning to code in Java with the goal of creating Minecraft Mods, although my initial attempts were not successful🤣. After getting accepted into a university to study Computer Science, my love for programming only grew stronger. I continued to code and learn, and today, I am a skilled developer with a deep understanding of various programming languages and frameworks as well as experience of developing commercial applications that serve millions of users.
+					Programming has been my passion since childhood. At the age of 12, I
+					began learning to code in Java with the goal of creating Minecraft
+					Mods, although my initial attempts were not successful🤣. After
+					getting accepted into a university to study Computer Science, my love
+					for programming only grew stronger. I continued to code and learn, and
+					today, I am a skilled developer with a deep understanding of various
+					programming languages and frameworks as well as experience of
+					developing commercial applications that serve millions of users.
 				</p>
 
 				<h2 className="headline mb-4 mt-12 text-4xl">Work Experience</h2>
 				<p className="mb-6">
-					I have had the privilege of working at some of the world's top companies, both in the past and currently.
+					I have had the privilege of working at some of the world&apos;s top
+					companies, both in the past and currently.
 				</p>
 				<WorkExperience jobs={jobs} />
 
 				<h2 className="headline mb-4 mt-12 text-4xl">Education</h2>
 				<p className="mb-6">
-					I have a Bachelor's degree in Computer Science, which has given me a solid foundation in software development.
+					I have a Bachelor&apos;s degree in Computer Science, which has given
+					me a solid foundation in software development.
 				</p>
 
 				<Education education={education} />

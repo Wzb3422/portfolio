@@ -1,16 +1,9 @@
 'use client';
 
-import Jacob from './jacob-herper.png';
-
 import { motion } from 'framer-motion';
-import Image from 'next/image';
 import Link from 'next/link';
 
-interface LogoProps {
-	hideName?: boolean;
-}
-
-const Logo = ({ hideName }: LogoProps) => {
+const Logo = () => {
 	return (
 		<Link href="/" passHref>
 			<motion.div
@@ -39,7 +32,6 @@ const Logo = ({ hideName }: LogoProps) => {
 				<span className="absolute left-16 from-blue-400 to-blue-700  transition duration-300 bg-gradient-to-r bg-clip-text text-transparent">
 					Zeb Wu
 				</span>
-
 			</motion.div>
 		</Link>
 	);

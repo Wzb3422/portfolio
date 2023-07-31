@@ -1,6 +1,5 @@
 import { AnimatePage } from '@components/atoms/AnimatePage';
 import { Container } from '@components/atoms/Container';
-import { ContactForm } from '@components/molecules/ContactForm';
 
 export const metadata = {
 	title: 'Contact Zeb Wu - Software Engineer in the UK',
@@ -19,9 +18,11 @@ const ContactPage = () => {
 				</h1>
 
 				<p className="mt-16 text-lg leading-8 text-slate-600 dark:text-off-white">
-					If you are interested in the services I offer or would like to connect over a cup of coffee, please don't hesitate to get in touch with me.
-					<br />
-					I am always happy to hear from new people and eager to explore new opportunities.
+					If you are interested in the services I offer or would like to connect
+					over a cup of coffee, please don&apos;t hesitate to get in touch with
+					me.
+					<br />I am always happy to hear from new people and eager to explore
+					new opportunities.
 				</p>
 
 				<p className="mt-2">

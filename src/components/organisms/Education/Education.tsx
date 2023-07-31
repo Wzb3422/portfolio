@@ -10,22 +10,19 @@ export interface EducationProps {
 const Education = ({ education }: EducationProps) => {
 	return (
 		<>
-			{education.map(({ course, startDate, endDate, institution, courseContents }) => (
-				<div
-					className={classNames(
-						'flex'
-					)}
-					key={course}
-				>
-					<School
-						course={course}
-						startDate={startDate}
-						endDate={endDate}
-						institution={institution}
-						courseContents={courseContents}
-					/>
-				</div>
-			))}
+			{education.map(
+				({ course, startDate, endDate, institution, courseContents }) => (
+					<div className={classNames('flex')} key={course}>
+						<School
+							course={course}
+							startDate={startDate}
+							endDate={endDate}
+							institution={institution}
+							courseContents={courseContents}
+						/>
+					</div>
+				)
+			)}
 		</>
 	);
 };

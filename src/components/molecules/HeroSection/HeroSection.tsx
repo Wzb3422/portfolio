@@ -1,10 +1,5 @@
 import { TypeWriter } from '@components/atoms/TypeWriter';
 
-import LogoTiktok from '@root/public/assets/companies/tiktok.svg';
-import LogoAlibaba from '@root/public/assets/companies/alibaba.svg';
-import LogoWechat from '@root/public/assets/companies/wechat.svg';
-import LogoYyb from '@root/public/assets/companies/yyb.svg';
-
 import Image from 'next/image';
 import Link from 'next/link';
 
@@ -41,7 +36,8 @@ export const HeroSection = () => {
 						<p className="text-lg leading-8 text-slate-600 dark:text-off-white">
 							I am a passionate Software Engineer, specialised in front-end
 							development using React and TypeScript. As an advocate for web
-							performance and user experience, I create amazing web applications to make the Internet a better place.
+							performance and user experience, I create amazing web applications
+							to make the Internet a better place.
 						</p>
 						<p className="flex flex-wrap items-center text-lg mt-4 leading-8 text-slate-600 dark:text-off-white">
 							Currently a Software Engineer at

@@ -1,10 +1,5 @@
 import { Container } from '@components/atoms/Container';
-import {
-	IconGithub,
-	IconInstagram,
-	IconLinkedin,
-	IconTwitter,
-} from '@components/atoms/Icons';
+import { IconGithub, IconLinkedin } from '@components/atoms/Icons';
 import { SocialIcons } from '@components/molecules/SocialIcons';
 
 const Footer = () => {

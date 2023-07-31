@@ -12,7 +12,13 @@ export interface SchoolProps {
 	courseContents: string[];
 }
 
-const School = ({ institution, course, startDate, endDate, courseContents }: SchoolProps) => {
+const School = ({
+	institution,
+	course,
+	startDate,
+	endDate,
+	courseContents,
+}: SchoolProps) => {
 	return (
 		<Box className="w-full">
 			<div className="flex items-center gap-4">
