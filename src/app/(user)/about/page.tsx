@@ -2,7 +2,6 @@ import { AnimatePage } from '@components/atoms/AnimatePage';
 import { Button } from '@components/atoms/Button';
 import { Container } from '@components/atoms/Container';
 import { IconDownload } from '@components/atoms/Icons';
-import { PodcastList } from '@components/molecules/PodcastList';
 import { Education } from '@components/organisms/Education';
 import { WorkExperience } from '@components/organisms/WorkExperience';
 
@@ -10,76 +9,68 @@ import { sanityClient } from '@lib/sanity';
 
 import { educationQuery } from '@queries/education';
 import { jobsQuery } from '@queries/jobs';
-import { podcastsQuery } from '@queries/podcasts';
 
-import type { Education as EducationType, Job, Podcast } from '@types';
-import Link from 'next/link';
+import type { Education as EducationType, Job } from '@types';
 
 export const metadata = {
-	title:
-		'About Jacob Herper, a Senior Software Engineer and Consultant in the UK',
+	title: 'About Zeb Wu, a Senior Software Engineer and Consultant in the UK',
 	description:
 		'As a passionate front-end software developer, I create amazing websites and web apps to make the internet a better place.',
 };
 
 const getData = async () => {
-	const podcasts: Podcast[] = await sanityClient.fetch(podcastsQuery);
 	const jobs: Job[] = await sanityClient.fetch(jobsQuery);
 	const education: EducationType[] = await sanityClient.fetch(educationQuery);
 
 	return {
 		education,
 		jobs,
-		podcasts,
 	};
 };
 
 const AboutPage = async () => {
-	const { education, jobs, podcasts } = await getData();
+	const { education, jobs } = await getData();
 
 	return (
 		<AnimatePage>
 			<Container>
 				<h1 className="headline mt-8 text-3xl md:text-5xl lg:text-6xl">
-					Hey, I&apos;m Jacob Herper
+					Hey, I&apos;m Zeb Wu
 				</h1>
 				<h2 className="mt-2 text-xl font-bold md:text-2xl">
-					Senior Software Engineer from the UK
+					Software Engineer
 				</h2>
 				<p className="mt-8">
-					As a passionate front-end developer, I create amazing websites and web
-					apps to make the internet a better place. I am an advocate for web
-					performance and accessibility as well as a JAMstack enthusiast with
-					experience in serverless technologies.
+					As a highly motivated Fullstack Developer with a strong focus on
+					frontend development, I have 2 years of professional experience and a
+					proven track record of success in top global companies such as Tiktok,
+					WeChat, and Alibaba. My in-depth knowledge of modern web technologies
+					and unwavering passion for staying up-to-date with the latest trends
+					in the field make me a valuable asset to any team. I am confident in
+					my abilities to deliver exceptional results and exceed expectations.
 				</p>
 				<p className="my-4">
-					I am &radic;1,024 years old and have been a web developer for as long
-					as I can think. The technologies I work with are JavaScript, HTML and
-					CSS with a focus on the frameworks React.js, Gatsby, Next.js, Node and
-					Express. I use code not only to do my day-to-day job, but also to
-					solve everyday problems I come across.
+					Programming has been my passion since childhood. At the age of 12, I
+					began learning to code in Java with the goal of creating Minecraft
+					Mods, although my initial attempts were not successful🤣. After
+					getting accepted into a university to study Computer Science, my love
+					for programming only grew stronger. I continued to code and learn, and
+					today, I am a skilled developer with a deep understanding of various
+					programming languages and frameworks as well as experience of
+					developing commercial applications that serve millions of users.
 				</p>
-				<p>
-					When I am not writing code I love to spend time with my wife and
-					five-year-old daughter at home in England or travelling around the
-					world. We are quite a multi-cultural family with me having grown up in
-					Germany 🇩🇪 and my wife being from Mexico 🇲🇽, which is why we raise our
-					daughter trilingual. I myself speak five languages (some better than
-					others). Furthermore I enjoy cooking fresh food when I come home after
-					a long day at the office.
+
+				<h2 className="headline mb-4 mt-12 text-4xl">Work Experience</h2>
+				<p className="mb-6">
+					I have had the privilege of working at some of the world&apos;s top
+					companies, both in the past and currently.
 				</p>
-				<h2 className="headline mb-4 mt-12 text-4xl">Podcasts I enjoy</h2>
-
-				<PodcastList podcasts={podcasts} />
-
-				<h2 className="headline mb-4 mt-12 text-4xl">Experience</h2>
-
 				<WorkExperience jobs={jobs} />
 
 				<h2 className="headline mb-4 mt-12 text-4xl">Education</h2>
 				<p className="mb-6">
-					I am mostly self-taught, but here are some of the most relevant
-					certifications I have achieved:
+					I have a Bachelor&apos;s degree in Computer Science, which has given
+					me a solid foundation in software development.
 				</p>
 
 				<Education education={education} />
@@ -91,38 +82,18 @@ const AboutPage = async () => {
 
 					<p>
 						I am happy to have a chat about relevant projects to work on. Below
-						you find a download link for my up-to-date CV. Are you a recruiter?
-						Have a read through my recruiters page, where I explain what I am
-						looking for in a job. This page is designed to save both of us time.
-					</p>
-					<p>
-						If you are interested in working with me, please contact me via{' '}
-						<Link
-							href="/contact"
-							className="underlined relative border-b-2 border-grey-300 font-bold hover:border-b-0 dark:border-grey-700"
-						>
-							the contact form
-						</Link>
-						. I do not appreciate cold calls and will not answer calls from
-						numbers I do not recognise.
+						you find a download link for my latest resume.
 					</p>
 
 					<div className="mt-8 flex justify-start gap-6 items-baseline">
 						<Button
-							href="/cv-2023.pdf"
+							href="/zebwu-resume.pdf"
 							download={true}
 							className="group flex gap-2 whitespace-nowrap"
 						>
 							<IconDownload />
-							Download my CV
+							Download My Resume
 						</Button>
-
-						<Link
-							href="/recruiters"
-							className="text-sm font-semibold leading-6 text-slate-900 transition-all hover:text-slate-600 dark:text-slate-400 dark:hover:text-slate-200"
-						>
-							Information for recruiters <span aria-hidden="true">→</span>
-						</Link>
 					</div>
 				</section>
 			</Container>

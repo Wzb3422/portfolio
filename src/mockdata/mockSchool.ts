@@ -5,6 +5,7 @@ import type { Education } from '@types';
 export const mockSchool: Education = {
 	institution: mockCompany,
 	course: 'Some course',
-	date: '2020-01-01',
+	startDate: '2018-01-01',
+	endDate: '2022-01-01',
 	courseContents: ['TypeScript', 'React'],
 };

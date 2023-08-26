@@ -9,7 +9,9 @@ export interface WorkExperienceProps {
 }
 
 const WorkExperience = ({ jobs }: WorkExperienceProps) => {
-	const Spacer = () => <div className="md:w-1/8 w-12 shrink-0 grow-0" />;
+	const Spacer = () => (
+		<div className="md:w-1/8 w-12 shrink-0 grow-0 sm:hidden" />
+	);
 
 	return (
 		<div className="w-[calc(100% + 2rem)] relative -mx-4 flex snap-x snap-center gap-6 overflow-hidden overflow-x-auto pb-14 lg:mx-0 lg:w-full">

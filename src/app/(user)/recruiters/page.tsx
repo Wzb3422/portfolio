@@ -1,8 +1,6 @@
 import { AnimatePage } from '@components/atoms/AnimatePage';
 import { Container } from '@components/atoms/Container';
-import { ContentBlock } from '@components/atoms/ContentBlock';
 import { RecruiterForm } from '@components/molecules/RecruiterForm';
-import { Salary } from '@components/molecules/Salary';
 
 import { sanityClient } from '@lib/sanity';
 
@@ -12,7 +10,7 @@ import { salaryQuery } from '@queries/salary';
 import type { Page, Salary as SalaryRange } from '@types';
 
 export const metadata = {
-	title: 'Recruiter Information about Jacob Herper',
+	title: 'Recruiter Information about Zeb Wu',
 	description:
 		'Thank you for your interest in me for software engineering roles you are hiring for.',
 };
@@ -28,7 +26,7 @@ const getData = async () => {
 };
 
 const RecruitersPage = async () => {
-	const { page, salaryRange } = await getData();
+	// const { page, salaryRange } = await getData();
 
 	return (
 		<AnimatePage>
@@ -47,9 +45,9 @@ const RecruitersPage = async () => {
 				</p>
 
 				<h2 className="py-4 text-4xl font-bold">First things first</h2>
-				<Salary salaryRange={salaryRange} />
+				{/* <Salary salaryRange={salaryRange} />
 
-				<ContentBlock value={page.body} />
+				<ContentBlock value={page.body} /> */}
 
 				<RecruiterForm />
 			</Container>
