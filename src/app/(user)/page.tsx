@@ -25,12 +25,12 @@ const getData = async () => {
 };
 
 export const metadata = {
-	title: 'Software Engineer and Consultant Jacob Herper',
+	title: 'Frontend Engineer Zeb Wu',
 	description:
-		'A Front-End Software Engineer with a focus on JavaScript and React. I have more than 10 years experience working in software engineering and consulting.',
+		'A Front-End Software Engineer with a focus on JavaScript and React. I have worked at top global companies such as WeChat Tiktok Alibaba',
 	keywords: [
 		'Software Engineer',
-		'Jacob Herper',
+		'Zeb Wu',
 		'Software Consulting',
 		'Front-End',
 		'Full-Stack',
